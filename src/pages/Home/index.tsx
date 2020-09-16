@@ -1,8 +1,8 @@
 import React from 'react';
 
+
 import { 
     Container, 
-    Header,
     Title, 
     Content, 
     Info, 
@@ -15,23 +15,22 @@ import LogoImg from '../../assets/Logo.svg';
 import LogoFacebook from '../../assets/Logo-Facebook.svg';
 import LogoInstagram from '../../assets/Logo-Instagram.svg';
 
+import Header from '../../components/Header';
 import Button from '../../components/Button';
 
 const Home: React.FC = () => {
   return (
       <Container>
-        <Header>
-            <a href="#">Quem somos ?</a>
-        </Header>
-
+        <Header title="Quem somos ?" route="about" />
+            
         <Content>
             <Info>
                 <Title>
                     <h2>Seja bem vindo ao</h2>
-                    <h1>HEBRAICO PRA TODOS</h1>
+                    <h1>עברית לכולם</h1>
                 </Title>
             
-                <Button type="submit">Participar</Button>
+                <Button title="Participar" route="rules" />
                 
             </Info>
 

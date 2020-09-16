@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
+
 
 export const Container = styled.div`
     padding: 1rem;
@@ -9,28 +9,23 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-`;
-export const Header = styled.div`
-    text-align: right;
-    a {
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--blue-dark);
-        transition: color 0.2s;
-
-        &:hover {
-            color: ${shade(0.2, '#33A6F2')}
-        }
-    }
+    justify-content: space-between;
 `;
 
 export const Title = styled.div`
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
+    @media (min-width: 700px) {
+        width: min(40vw, max(512px));
+        height: min(40vh, max(512px));
+    }
 `;
+
 export const Content = styled.div `
-    padding: 1rem;
     max-width: 100%;
     height: 100%;
 
@@ -46,42 +41,39 @@ export const Content = styled.div `
 `;
 export const Info = styled.div `
     padding: 1.6rem;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 
     h2 {
-        margin: 3.2rem auto 1.6rem auto;
+        margin: 16px;
         color: var(--blue-medium);
         font-weight: 600;
     }
     
     h1 {
         text-align: center;
-        margin: 0px auto 32px auto;
+        margin: 16px;
         color: var(--blue-dark);
         font-weight: 600;
+        font-size: 48px;
         width: min(70vw, 350px);
 
         @media (min-width: 700px) {
-            margin: 0 auto 32px auto; 
+            font-size: 56px;
         }
     }
-
 `;
 
 export const Background = styled.div `
-padding: 1.6rem;
-margin: 16px;
-
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-
-
-
+    padding: 1.6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 `;
 
 export const Image = styled.div`
@@ -101,7 +93,7 @@ export const Links = styled.div `
     align-items: center;
     justify-content: center;
 
-    margin-top: 48px;
+    
 a {
     text-decoration: none;
     cursor: pointer;
