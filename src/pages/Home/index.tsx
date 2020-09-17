@@ -19,6 +19,9 @@ import Header from '../../components/Header';
 import Button from '../../components/Button';
 
 const Home: React.FC = () => {
+    const facebook = "https://www.facebook.com/gibify";
+    const instagram = "https://www.instagram.com/gibify_official/";
+
   return (
       <Container>
         <Header title="Quem somos ?" route="about" />
@@ -40,10 +43,10 @@ const Home: React.FC = () => {
                 </Image>
 
                 <Links>
-                    <a href="https://www.facebook.com/gibify">
+                    <a href={facebook} target="_blank"  rel="noopener noreferrer" >
                         <img src={LogoFacebook} alt="Facebook"/>
                     </a>
-                    <a href="https://www.instagram.com/gibify_official/">
+                    <a href={instagram} target="_blank"  rel="noopener noreferrer"> 
                         <img src={LogoInstagram} alt="Intagram"/>
                     </a>
                 </Links>

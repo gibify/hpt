@@ -69,7 +69,7 @@ const Rules: React.FC = () => {
 
         <FooterButton>
           <div>
-            <a href="https://api.whatsapp.com/send?phone=5548998463847">Entrar</a>
+            <a href="https://api.whatsapp.com/send?phone=5548998463847" target="_blank"  rel="noopener noreferrer">Entrar</a>
           </div>
         </FooterButton>
 

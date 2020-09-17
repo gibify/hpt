@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
+    padding: 1rem;
     width: 100vw;
     height: 100vh;
-    padding: 1rem;
+    
 
     display: flex;
     flex-direction: column;
@@ -17,6 +18,14 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+    max-width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 1.6rem;
     margin-bottom: 16px;
 `;
