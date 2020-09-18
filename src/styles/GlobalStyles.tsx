@@ -29,6 +29,8 @@ export default createGlobalStyle`
     }
 
     :root {
+        font-size: 60%;
+        
         --blue-ligth: #E1F5FE;
         --blue-medium: #75C8FF;
         --blue-dark: #33A6F2;

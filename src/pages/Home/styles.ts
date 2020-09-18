@@ -2,14 +2,30 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-    padding: 1rem;
     width: 100vw;
     height: 100vh;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+`;
+
+export const Content = styled.div `
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 700px) {
+        display: flex;
+        flex-direction: row;
+        max-width: 1050px; 
+    }
 `;
 
 export const Title = styled.div`
@@ -24,40 +40,28 @@ export const Title = styled.div`
     }
 `;
 
-export const Content = styled.div `
-    max-width: 100%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-    @media (min-width: 700px) {
-        display: flex;
-        flex-direction: row; 
-    }
-`;
 export const Info = styled.div `
     padding: 1.6rem;
     height: 100%;
+
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
 
     h2 {
-        margin: 16px;
         color: var(--blue-medium);
         font-weight: 600;
+
+        @media (min-width: 700px) {
+            font-size: 18px;
+    }
     }
     
     h1 {
         text-align: center;
-        margin: 16px;
         color: var(--blue-dark);
         font-weight: 600;
-        font-size: 48px;
         width: min(70vw, 350px);
 
         @media (min-width: 700px) {
@@ -69,6 +73,7 @@ export const Info = styled.div `
 export const Background = styled.div `
     padding: 1.6rem;
     height: 100%;
+
     display: flex;
     align-items: center;
     flex-direction: column;

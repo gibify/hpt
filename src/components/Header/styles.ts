@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: right;
     padding: 1rem;
     width: 100%;
-    cursor: pointer;
 
-    
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    cursor: pointer;
 
     a {
         text-decoration: none;
