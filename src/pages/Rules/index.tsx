@@ -13,6 +13,7 @@ import Header from '../../components/Header';
 
 
 const Rules: React.FC = () => {
+  const whatsapp = '"https://api.whatsapp.com/send?phone="';
   return (
     <Container>
       <Header title="Voltar" route="/" />
@@ -69,7 +70,7 @@ const Rules: React.FC = () => {
 
         <FooterButton>
           <div>
-            <a href="https://api.whatsapp.com/send?phone=5548998463847" target="_blank"  rel="noopener noreferrer">Entrar</a>
+            <a href={whatsapp} target="_blank"  rel="noopener noreferrer">Entrar</a>
           </div>
         </FooterButton>
 

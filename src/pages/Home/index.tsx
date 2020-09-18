@@ -19,8 +19,8 @@ import Header from '../../components/Header';
 import Button from '../../components/Button';
 
 const Home: React.FC = () => {
-    const facebook = "https://www.facebook.com/gibify";
-    const instagram = "https://www.instagram.com/gibify_official/";
+    const facebook = "https://www.facebook.com/groups/hebraicoparatodos";
+    const instagram = "https://www.instagram.com/hebraicooficial/";
 
   return (
       <Container>
