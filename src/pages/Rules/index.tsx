@@ -13,7 +13,8 @@ import Header from '../../components/Header';
 
 
 const Rules: React.FC = () => {
-  const whatsapp = '"https://api.whatsapp.com/send?phone="';
+  const whatsapp = "https://api.whatsapp.com/send?phone=";
+  
   return (
     <Container>
       <Header title="Voltar" route="/" />
