@@ -24,7 +24,7 @@ const Home: React.FC = () => {
 
   return (
       <Container>
-        <Header title="Quem somos ?" route="about" />
+        <Header title="Quem somos" route="about" />
             
         <Content>
             <Info>

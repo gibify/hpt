@@ -5,8 +5,7 @@ import {
   Content,
   HeaderInfo,
   BodyInfo,
-  FooterInfo,
-  FooterButton
+  FooterInfo
 } from './styles';
 
 import Header from '../../components/Header';
@@ -69,11 +68,8 @@ const Rules: React.FC = () => {
           </p>
         </FooterInfo>
 
-        <FooterButton>
-          <div>
-            <a href={whatsapp} target="_blank"  rel="noopener noreferrer">Entrar</a>
-          </div>
-        </FooterButton>
+      <a className="button" href={whatsapp} target="_blank"  rel="noopener noreferrer">Entrar</a>
+        
 
       </Content>
     </Container>

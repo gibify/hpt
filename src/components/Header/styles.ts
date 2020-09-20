@@ -7,7 +7,6 @@ export const Container = styled.div`
 
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 
     cursor: pointer;
 
@@ -19,7 +18,8 @@ export const Container = styled.div`
         transition: color 0.2s;
 
         div:hover {
-            color: ${shade(0.2, '#33A6F2')}
+            color: ${shade(0.2, '#33A6F2')};
+            
         }
     }
     

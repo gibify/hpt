@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container } from './styles';
+import './styles.css';
 
 interface ButtonProps {
   title: string;
@@ -10,9 +10,10 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = (props) => {
   return (
-    <Container>
-      <Link to={props.route}>{props.title}</Link>
-    </Container>
+      <Link to={props.route} className="button">
+        {props.title}
+      </Link>
+    
   )
 }
 

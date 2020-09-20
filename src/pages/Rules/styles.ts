@@ -12,6 +12,24 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    .button {
+        text-align: center;
+        background: var(--blue-dark);
+        width: min(40vw, max(280px));
+        padding: 1rem;
+        margin: 1.8rem;
+        border-radius: 16px;
+        transition: background-color 0.2s;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--white);
+
+        :hover {
+            background: ${shade(0.2, '#33A6F2')};
+        }
+    }
+
     @media (min-width: 700px) {
         justify-content: space-evenly;
     }
@@ -79,38 +97,5 @@ export const FooterInfo = styled.div`
     strong {
         color: var(--blue-dark);
         
-    }
-`;
-
-export const FooterButton = styled.div`
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-
-    @media (min-width: 700px) {
-        justify-content: right;
-    }
-
-    div {
-        text-align: center;
-        background: var(--blue-dark);
-        width: min(80vw, max(280px));
-        padding: 1rem;
-        margin: 1.8rem;
-        border-radius: 16px;
-        transition: background-color 0.2s;
-
-        cursor: pointer;
-
-        &:hover {
-            background: ${shade(0.2, '#33A6F2')};
-        }
-    }
-    a {
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 16px;
-        color: var(--white);
     }
 `;
