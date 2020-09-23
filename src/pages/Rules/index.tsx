@@ -16,7 +16,7 @@ const Rules: React.FC = () => {
   
   return (
     <Container>
-      <Header title="Voltar" route="/" />
+      <Header title="Voltar" route="/home" />
         
       <Content>
         <HeaderInfo>
