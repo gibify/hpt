@@ -14,7 +14,7 @@ import Header from '../../components/Header';
 const About: React.FC = () => {
   return (
       <Container>
-          <Header title="Voltar" route="/home" />
+          <Header title="Voltar" route="/" />
 
           <Content>
             <Info>
