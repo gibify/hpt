@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { 
   Container,
@@ -12,7 +13,7 @@ import Header from '../../components/Header';
 
 
 const Rules: React.FC = () => {
-  const whatsapp = "https://api.whatsapp.com/send?phone=";
+  // const whatsapp = "https://api.whatsapp.com/send?phone=";
   
   return (
     <Container>
@@ -24,21 +25,21 @@ const Rules: React.FC = () => {
           <p>
             O grupo do WhatsApp não é um curso de Hebraico, 
             ele é livre para os membros se comunicarem e 
-            fazerrem perguntas sobre o Hebraico Moderno. 
-            Há lições em slides e exercícios, que são passados periodicamente. 
+            fazerem perguntas sobre o Hebraico Moderno. 
+            Há lições em Slides e exercícios, que são passados periodicamente. 
           </p>
         </HeaderInfo>
 
         <BodyInfo>
           <h1>Importante Saber</h1>
           <p>
-            Este grupo apoiao o estado de Israel e, ele é um grupo Judaico. 
+            Este grupo apoia o estado de Israel e, ele é um grupo Judaico. 
             Por isso, não entre se você não gosta de Israel, de Judeus, 
             se é Antissemita, se é Antissionista, se apoia o Boicote do BDS, 
             se é Neonazista, Racista, Xenofóbico ou pertence a seitas que afrontam o Judaísmo. 
-            Este grupo edentifica com os princípios da tolerância de Credo, de Costumes, Religiosas, 
-            Racias, Étnicas, de Gênero (LGBT), etc. Qualquer um dos integrantes manifestar intolerãncia 
-            com algum outro membrserá excluído.
+            Este grupo se identifica com os princípios da tolerância de Credos, Costumes, Religiosas, 
+            Racias, Étnicas, Gênero (LGBT), etc. Qualquer um dos integrantes que manifestarem intolerãncia 
+            com algum outro membro será excluído.
         </p>
         </BodyInfo>
 
@@ -56,7 +57,7 @@ const Rules: React.FC = () => {
             Nem pedir ou oferecer material no grupo ou por privado, gratuito ou pago.<br /><br />
             A comunicação no grupo é por mensagens escritas. As pronúncias são esclarecidas através das transliterações. 
             Os administradiores poderão enviar os áudios ou vídeos que julgarem necessários.<br /><br />
-            É expressamente proibido mencionar os nomes de <strong>D’us</strong> em hebraico, seja em qualquer alfabeto, 
+            É expressamente proibido mencionar os nomes de <strong>D’us</strong> em hebraico ou em qualquer outro alfabeto, 
             especialmente na saudação <strong>Shalom Ad’nai</strong>.
             Não é permitido usar a escrita com <strong>Nikkud, os sinais vocálicos, chamados pontinhos</strong>.<br /><br />
             São proibidas postagens que contestam ações ou determinações da administração. 
@@ -68,7 +69,8 @@ const Rules: React.FC = () => {
           </p>
         </FooterInfo>
 
-      <a className="button" href={whatsapp} target="_blank"  rel="noopener noreferrer">Entrar</a>
+      
+      <Link className="button" to="register" >Entrar</Link>
         
 
       </Content>
