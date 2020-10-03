@@ -1,3 +1,3 @@
-## This project is in devolopment
+## This project is in development
 
-To view this web click on [link]('gibify.ne');
+To view this web click on [link]('https://gibify.me/');
