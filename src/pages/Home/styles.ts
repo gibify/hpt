@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import Button from '../../components/Button';
 
 export const Container = styled.div`
     width: 100vw;
@@ -40,6 +41,12 @@ export const Title = styled.div`
     }
 `;
 
+export const HomeButton = styled(Button)`
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+ `;
+
 export const Info = styled.div `
     padding: 1.6rem;
     height: 100%;
@@ -67,6 +74,10 @@ export const Info = styled.div `
         @media (min-width: 700px) {
             font-size: 56px;
         }
+    }
+
+    a {
+        text-decoration: none;
     }
 `;
 

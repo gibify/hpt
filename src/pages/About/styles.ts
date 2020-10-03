@@ -19,7 +19,7 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media (min-width: 700px) {
+    @media (min-width: 750px) {
         flex-direction: row;
         max-width: 1050px;
         height: 100%;
@@ -42,10 +42,20 @@ export const Info = styled.div`
 
     p {
         color: var(--blue-medium);
+        border: 2px solid var(--white);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 0 0.5rem;
+
+        @media (min-width: 750px) {
+            border: 0;
+            border-radius: none;
+            box-shadow: none;
+        }
     }
 
 `;
-export const Background = styled.div`
+export const BackgroundImage = styled.div`
     padding: 1rem;
     width: 100%;
     height: 100%;
@@ -55,7 +65,7 @@ export const Background = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media (min-width: 700px) {
+    @media (min-width: 750px) {
         background: var(--white);
     }
 

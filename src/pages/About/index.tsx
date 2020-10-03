@@ -6,7 +6,7 @@ import {
   Container,
   Content,
   Info,
-  Background
+  BackgroundImage,
 } from './styles';
 
 import Header from '../../components/Header';
@@ -30,9 +30,9 @@ const About: React.FC = () => {
               </p>
             </Info>
 
-            <Background>
+            <BackgroundImage>
                     <img src={LogoImg} alt="Logo do Site"/>
-            </Background>
+            </BackgroundImage>
           </Content>
       </Container>
   )

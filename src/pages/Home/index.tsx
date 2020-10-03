@@ -1,11 +1,12 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom'
 
 import { 
     Container, 
-    Title, 
     Content, 
     Info, 
+    Title, 
+    HomeButton,
     Background,
     Image,
     Links
@@ -16,7 +17,6 @@ import LogoFacebook from '../../assets/Logo-Facebook.svg';
 import LogoInstagram from '../../assets/Logo-Instagram.svg';
 
 import Header from '../../components/Header';
-import Button from '../../components/Button';
 
 const Home: React.FC = () => {
     const facebook = "https://www.facebook.com/groups/hebraicoparatodos";
@@ -32,9 +32,11 @@ const Home: React.FC = () => {
                     <h2>Seja bem vindo ao</h2>
                     <h1>עברית לכולם</h1>
                 </Title>
-            
-                <Button title="Participar" route="rules" />
-                
+
+                <Link to="/rules">
+                    <HomeButton>Participar</HomeButton>
+                </Link>
+
             </Info>
 
             <Background>
