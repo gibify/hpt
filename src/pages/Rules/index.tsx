@@ -6,7 +6,8 @@ import {
   Content,
   HeaderInfo,
   BodyInfo,
-  FooterInfo
+  FooterInfo,
+  RulesButton
 } from './styles';
 
 import Header from '../../components/Header';
@@ -70,7 +71,9 @@ const Rules: React.FC = () => {
         </FooterInfo>
 
       
-      <Link className="button" to="register" >Entrar</Link>
+      <Link to="register" >
+        <RulesButton outlined>Entrar</RulesButton>
+      </Link>
         
 
       </Content>
