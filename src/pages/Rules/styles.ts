@@ -17,9 +17,10 @@ export const Container = styled.div`
 export const Content = styled.div`
     width: 100%;
     height: 100%;
+
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 
     a {
@@ -28,11 +29,6 @@ export const Content = styled.div`
 
     @media (min-width: 750px) {
         max-width: 1050px;
-    }
-
-    @media (min-height: 750px) {
-        justify-content: center;
-
     }
 
 `;
