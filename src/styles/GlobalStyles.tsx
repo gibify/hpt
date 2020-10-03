@@ -37,5 +37,7 @@ export default createGlobalStyle`
         --white: #FFFFFF;
         --black: #000000;
         --Gray: #777777;
+        --dark-hover: #0d75bb;
+        --ligth-hover: #75C8FF;
     }
 `;
