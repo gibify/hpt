@@ -1,20 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-import './styles.css';
 
-interface ButtonProps {
-  title: string;
-  route: string;
+interface Props {
+  outlined?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = (props) => {
-  return (
-      <Link to={props.route} className="button">
-        {props.title}
-      </Link>
-    
-  )
-}
+export default styled.button<Props>`
+  background: ${(props) => (props.outlined ? 'transparent' : 'var(--blue-dark)')};
+  color: ${(props) => (props.outlined ? 'var(--blue-dark)' : 'var(--white)')};
+  border: ${(props) => (props.outlined ? '2px solid var(--blue-dark)' : 'none')};
 
-export default Button;
+  width: 180px;
+  height: 36px;
+  padding: 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+    background: ${(props) => props.outlined 
+      ? 'var(--light-hover)' 
+      : 'var(--dark-hover)'
+    };
+  }
+
+`;
