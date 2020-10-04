@@ -21,7 +21,7 @@ export default styled.button<Props>`
 
   &:hover {
     background: ${(props) => props.outlined 
-      ? 'var(--light-hover)' 
+      ? 'var(--white)' 
       : 'var(--dark-hover)'
     };
   }

@@ -104,6 +104,7 @@ export const BackgroundImage = styled.div`
 
     @media (min-width: 750px) {
         background: var(--white);
+        box-shadow: 0 0 0.5rem var(--blue-dark);
     }
 
     img {
