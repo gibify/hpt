@@ -13,6 +13,7 @@ import {
 } from './styles';
 
 import LogoImg from '../../assets/Logo.svg';
+import LogoHPT from '../../assets/Logo-HPT.svg';
 import LogoFacebook from '../../assets/Logo-Facebook.svg';
 import LogoInstagram from '../../assets/Logo-Instagram.svg';
 
@@ -30,7 +31,7 @@ const Home: React.FC = () => {
             <Info>
                 <Title>
                     <h2>Seja bem vindo ao</h2>
-                    <h1>עברית לכולם</h1>
+                    <img src={LogoHPT} alt="logo"/>
                 </Title>
 
                 <Link to="/rules">

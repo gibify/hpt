@@ -31,11 +31,27 @@ export const Content = styled.div `
 
 export const Title = styled.div`
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 
-    @media (min-width: 700px) {
+    h2 {
+        color: var(--blue-medium);
+        font-weight: 600;
+        text-align: center;
+
+        @media (min-width: 750px) {
+            font-size: 3rem;
+        }
+    }
+
+    img {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    
+    @media (min-width: 750px) {
         width: min(40vw, max(512px));
         height: min(40vh, max(512px));
     }
@@ -55,26 +71,6 @@ export const Info = styled.div `
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-
-    h2 {
-        color: var(--blue-medium);
-        font-weight: 600;
-
-        @media (min-width: 700px) {
-            font-size: 18px;
-    }
-    }
-    
-    h1 {
-        text-align: center;
-        color: var(--blue-dark);
-        font-weight: 600;
-        width: min(70vw, 350px);
-
-        @media (min-width: 700px) {
-            font-size: 56px;
-        }
-    }
 
     a {
         text-decoration: none;
