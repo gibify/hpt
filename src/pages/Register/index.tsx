@@ -26,13 +26,16 @@ const Register: React.FC = () => {
             <legend>Preencha o formulário</legend>
 
             <label htmlFor="name">Nome</label>
-            <input type="text" placeholder="Digite seu Nome"/>
+            <input type="text" placeholder="Digite seu Nome completo"/>
 
             <label htmlFor="email">Email</label>
             <input type="email" placeholder="Digite seu Email"/>
 
             <label htmlFor="phone">Telefone</label>
-            <input type="tel" placeholder="Digite seu Telefone"/>
+            <input type="tel" placeholder="Digite seu Telefone com o DDD"/>
+
+            <label htmlFor="phone">Onde nos encontrou?</label>
+            <input type="text" placeholder="Nos fale, onde encontrou o grupo"/>
           </fieldset>
 
           <RegisterButton outlined>Registrar</RegisterButton>
