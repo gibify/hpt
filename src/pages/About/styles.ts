@@ -45,9 +45,13 @@ export const Info = styled.div`
         border: 2px solid var(--white);
         border-radius: 1.5rem;
         padding: 2rem;
+        line-height: 2rem;
         box-shadow: 0 0 0.5rem;
 
         @media (min-width: 750px) {
+            line-height: 2.5rem;
+            font-family: serif;
+            font-size: 2rem;
             border: 0;
             border-radius: none;
             box-shadow: none;
@@ -67,6 +71,7 @@ export const BackgroundImage = styled.div`
 
     @media (min-width: 750px) {
         background: var(--white);
+        border-radius: 16px;
         box-shadow: 0 0 0.5rem var(--blue-dark);
     }
 

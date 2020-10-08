@@ -71,7 +71,8 @@ export const Form = styled.div`
             width: 100%;
             padding: 1rem;
             border: 0;
-            box-shadow: 0 0 0.5rem #333;
+            border-radius: 8px;
+            box-shadow: 0 0 0.5rem var(--blue-dark);
             
             &::placeholder {
                 font-size: 14px;
@@ -104,6 +105,7 @@ export const BackgroundImage = styled.div`
 
     @media (min-width: 750px) {
         background: var(--white);
+        border-radius: 16px;
         box-shadow: 0 0 0.5rem var(--blue-dark);
     }
 
