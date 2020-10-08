@@ -1,3 +1,3 @@
 ## This project is in development
 
-To view this web click on [hebraciopratodos.com](https://gibify.me/);
+To view this web click on [hebraicopratodos.com](https://gibify.me/);
