@@ -19,10 +19,10 @@ import LogoInstagram from '../../assets/Logo-Instagram.svg';
 
 import Header from '../../components/Header';
 
-const Home: React.FC = () => {
-    const facebook = "https://www.facebook.com/groups/hebraicoparatodos";
-    const instagram = "https://www.instagram.com/hebraicooficial/";
+const facebookLink = "https://www.facebook.com/groups/hebraicoparatodos";
+const instagramLink = "https://www.instagram.com/hebraicooficial/";
 
+const Home: React.FC = () => {
   return (
       <Container>
         <Header title="Quem somos" route="about" />
@@ -46,10 +46,10 @@ const Home: React.FC = () => {
                 </Image>
 
                 <Links>
-                    <a href={facebook} target="_blank"  rel="noopener noreferrer" >
+                    <a href={facebookLink} target="_blank"  rel="noopener noreferrer" >
                         <img src={LogoFacebook} alt="Facebook"/>
                     </a>
-                    <a href={instagram} target="_blank"  rel="noopener noreferrer"> 
+                    <a href={instagramLink} target="_blank"  rel="noopener noreferrer"> 
                         <img src={LogoInstagram} alt="Intagram"/>
                     </a>
                 </Links>
