@@ -34,7 +34,7 @@ const Register: React.FC = () => {
             <label htmlFor="phone">Telefone</label>
             <input type="tel" placeholder="Digite seu Telefone com o DDD"/>
 
-            <label htmlFor="phone">Onde nos encontrou?</label>
+            <label htmlFor="text">Onde nos encontrou?</label>
             <input type="text" placeholder="Nos fale, onde encontrou o grupo"/>
           </fieldset>
 
